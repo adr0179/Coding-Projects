@@ -6,8 +6,6 @@ public class NumbersGame {
     public static Scanner keyboard = new Scanner(System.in);
 
     public static void main(String[] args) {
-//        int num = 12;
-//        System.out.println(reverseFactorial(num, 2));
         int option = 0;
         int number = 0;
         while(option != -1){
