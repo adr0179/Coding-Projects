@@ -50,6 +50,7 @@ public class SillyStrings {
         System.out.println("\nWelcome To silly strings\n");
         System.out.println("   1. count vowels");
         System.out.println("   2. reverse string");
+        System.out.println("   3. interleaved string");
         System.out.println("   0. Exit");
         System.out.print("Choose an option: ");
     }
