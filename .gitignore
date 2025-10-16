@@ -1,0 +1,32 @@
+# Object files
+*.o
+
+# Executable files
+*.exe
+
+# Debugging files
+*.pdb
+*.ilk
+
+# IDE-specific files (e.g., Visual Studio)
+.vs/
+*.suo
+*.user
+*.vcproj.*.user
+*.vcxproj.filters
+*.sln.docstates
+
+# Build directories
+build/
+bin/
+obj/
+
+# Temporary files
+*~
+*.tmp
+
+# CMake related files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
