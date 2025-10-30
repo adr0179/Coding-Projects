@@ -3,7 +3,7 @@ package NumConverter;
 // work in progress
 
 public class NumConverter {
-    static int binMax = 7;
+    static int binMax = 8;
 
     public static String toString(String[] arr) {
         String str = "";
@@ -33,5 +33,8 @@ public class NumConverter {
 
     public static void main(String[] args) {
         System.out.println(binaryConvert(87));
+        System.out.println(binaryConvert(20));
+        System.out.println(binaryConvert(255));
+        System.out.println(binaryConvert(0));
     }
 }
