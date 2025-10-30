@@ -17,6 +17,10 @@ public class NumConverter {
     public static String binaryConvert(int num) {
         ArrayList<String> res = new ArrayList<>();
 
+        if (num == 0) {
+            return "00000000";
+        }
+
         while (num >= 1) {
             if (num % 2 == 1) {
                 res.add("1");
@@ -36,5 +40,6 @@ public class NumConverter {
         System.out.println(binaryConvert(255));
         System.out.println(binaryConvert(0));
         System.out.println(binaryConvert(4532));
+        System.out.println(binaryConvert(97644));
     }
 }
