@@ -14,7 +14,7 @@ public class NumConverter {
         return str;
     }
 
-    public static String binaryConvert(int num) {
+    public static String toBinary(int num) {
         ArrayList<String> res = new ArrayList<>();
 
         if (num == 0) {
@@ -35,11 +35,11 @@ public class NumConverter {
     }
 
     public static void main(String[] args) {
-        System.out.println(binaryConvert(87));
-        System.out.println(binaryConvert(20));
-        System.out.println(binaryConvert(255));
-        System.out.println(binaryConvert(0));
-        System.out.println(binaryConvert(4532));
-        System.out.println(binaryConvert(97644));
+        System.out.println(toBinary(87));
+        System.out.println(toBinary(20));
+        System.out.println(toBinary(255));
+        System.out.println(toBinary(0));
+        System.out.println(toBinary(4532));
+        System.out.println(toBinary(97644));
     }
 }
