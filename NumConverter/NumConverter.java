@@ -4,7 +4,7 @@ import java.util.ArrayList;
 // work in progress
 
 public class NumConverter {
-    public static String toString(ArrayList<String> arr) {
+    private static String toString(ArrayList<String> arr) {
         String str = "";
 
         for (int i = arr.size() - 1; i >= 0; i--) {
