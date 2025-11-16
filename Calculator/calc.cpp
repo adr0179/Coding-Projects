@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-// work in progress (does not work with brackets yet)
+// work in progress (does not work with brackets or decimals yet)
 
 class Calculator {
     private:
@@ -28,7 +28,7 @@ class Calculator {
     public:
         Calculator(){}
         void start() {
-            cout << "Input a number" << endl;
+            cout << "Input a Number or Whole Calculation" << endl;
             cin >> this->inp1;
             while (true) {
                 cout << "Operation (Type E to stop)" << endl;
@@ -38,12 +38,13 @@ class Calculator {
                     break;
                 }
 
-                cout << "Input another number" << endl;
+                cout << "Input Another Number" << endl;
                 cin >> this->inp2;
 
                 this->inp1 = calculate(opp, this->inp1, this->inp2);
                 cout << "Result: " << this->inp1 << endl;
-                cout << "Input another number" << endl;
+                cout << "Input Another number" << endl;
             }
         }
+        ~Calculator(){cout << "End of Calculation." << endl;}
 };
