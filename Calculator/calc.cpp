@@ -19,9 +19,19 @@ class Calculator {
                 return x * y;
             } else if (opp == '/') {
                 return x / y;
+            } else if (opp == '!') {
+                return factorial(x);
             } else {
                 cout << "Syntax Error" << endl;
                 return 0;
+            }
+        }
+
+        int factorial(int n) {
+            if (n == 1) {
+                return 1;
+            } else {
+                return n * factorial(n-1);
             }
         }
 
@@ -36,14 +46,22 @@ class Calculator {
 
                 if (opp == 'E') {
                     break;
+                } else if (opp = '!') {
+                    this->inp1 = calculate(opp, this->inp1, this->inp2);
+                    cout << "Result: " << this->inp1 << endl;
+                    cout << "Input Another number" << endl;
+                } else {
+                    cout << "Input Another Number" << endl;
+                    cin >> this->inp2;
+
+                    if (opp == '!') {
+                        factorial(this->inp1);
+                    }
+
+                    this->inp1 = calculate(opp, this->inp1, this->inp2);
+                    cout << "Result: " << this->inp1 << endl;
+                    cout << "Input Another number" << endl;
                 }
-
-                cout << "Input Another Number" << endl;
-                cin >> this->inp2;
-
-                this->inp1 = calculate(opp, this->inp1, this->inp2);
-                cout << "Result: " << this->inp1 << endl;
-                cout << "Input Another number" << endl;
             }
         }
         ~Calculator(){cout << "End of Calculation." << endl;}
